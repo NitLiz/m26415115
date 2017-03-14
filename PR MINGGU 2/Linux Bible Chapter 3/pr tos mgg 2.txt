@@ -1,0 +1,1012 @@
+no 1
+m26415115@debian7:~$ ls
+compoundpython.py  fruits2.txt  hello.py  public_html  repo   tesphyton.py
+fruit.txt          hello.c      projects  readfile.py  repo$
+m26415115@debian7:~$ cd public_html
+m26415115@debian7:~/public_html$ ls
+haha  pertemuan2 tryout.txt
+m26415115@debian7:~/public_html$ rmdir haha
+m26415115@debian7:~/public_html$ ls
+pertemuan2 tryout.txt
+m26415115@debian7:~/public_html$ mkdir hoho
+m26415115@debian7:~/public_html$ ls
+hoho  pertemuan2 tryout.txt
+m26415115@debian7:~/public_html$ cd hoho
+m26415115@debian7:~/public_html/hoho$ cd ..
+m26415115@debian7:~/public_html$ cd ..
+//
+no 2
+berupa screenshot dari ubuntu terminal
+//
+no 3
+berupa screenshot dari ubuntu terminal
+//
+no 5
+m26415115@debian7:~$ basename /usr/share/doc/
+doc
+m26415115@debian7:~$
+//
+no 4
+m26415115@debian7:~$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/bin/sh
+bin:x:2:2:bin:/bin:/bin/sh
+sys:x:3:3:sys:/dev:/bin/sh
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/bin/sh
+man:x:6:12:man:/var/cache/man:/bin/sh
+lp:x:7:7:lp:/var/spool/lpd:/bin/sh
+mail:x:8:8:mail:/var/mail:/bin/sh
+news:x:9:9:news:/var/spool/news:/bin/sh
+uucp:x:10:10:uucp:/var/spool/uucp:/bin/sh
+proxy:x:13:13:proxy:/bin:/bin/sh
+www-data:x:33:33:www-data:/var/www:/bin/sh
+backup:x:34:34:backup:/var/backups:/bin/sh
+list:x:38:38:Mailing List Manager:/var/list:/bin/sh
+irc:x:39:39:ircd:/var/run/ircd:/bin/sh
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/bin/sh
+nobody:x:65534:65534:nobody:/nonexistent:/bin/sh
+libuuid:x:100:101::/var/lib/libuuid:/bin/sh
+Debian-exim:x:101:103::/var/spool/exim4:/bin/false
+statd:x:102:65534::/var/lib/nfs:/bin/false
+sshd:x:103:65534::/var/run/sshd:/usr/sbin/nologin
+lamidjan:x:1000:1000:lamidjan,,,:/home/lamidjan:/bin/bash
+ntp:x:104:106::/home/ntp:/bin/false
+justin:x:1001:1001:Justinus Andjarwirawan,Puskom W,031-2983310,:/home/justin:/bin/bash
+m26413034:x:1002:1002::/home/m26413034:/bin/bash
+m26410097:x:1003:1003:,,,:/home/m26410097:/bin/bash
+m26412148:x:1004:1004::/home/m26412148:/bin/sh
+m26413003:x:1005:1005::/home/m26413003:/bin/bash
+m26412023:x:1006:1006:,,,:/home/m26412023:/bin/bash
+m26412171:x:1007:1007::/home/m26412171:/bin/sh
+m26412137:x:1008:1008:,,,:/home/m26412137:/bin/bash
+m26413006:x:1009:1009::/home/m26413006:/bin/bash
+m26410004:x:1010:1010::/home/m26410004:/bin/sh
+m26413007:x:1011:1011:,007,087862146851,0315676713:/home/m26413007:/bin/bash
+m26412145:x:1012:1012::/home/m26412145:/bin/sh
+m26413005:x:1013:1013::/home/m26413005:/bin/bash
+m26413139:x:1014:1014:,,,:/home/m26413139:/bin/bash
+m26412130:x:1015:1015::/home/m26412130:/bin/sh
+m26413017:x:1016:1016:,,,:/home/m26413017:/bin/bash
+m26413051:x:1017:1017:,,,exit:/home/m26413051:/bin/bash
+m26413031:x:1018:1018:,,,:/home/m26413031:/bin/bash
+m26413090:x:1019:1019::/home/m26413090:/bin/bash
+m26413032:x:1020:1020:,601,0812187114469,0317526717:/home/m26413032:/bin/sh
+m26413061:x:1021:1021::/home/m26413061:/bin/sh
+m26413002:x:1022:1022:,,,:/home/m26413002:/bin/bash
+m26409043:x:1023:1023::/home/m26409043:/bin/sh
+m26413012:x:1024:1024:,,,:/home/m26413012:/bin/bash
+m26413163:x:1025:1025:,,,:/home/m26413163:/bin/bash
+m26412170:x:1026:1026::/home/m26412170:/bin/sh
+m26413112:x:1027:1027:,.,.,.:/home/m26413112:/bin/bash
+m26413140:x:1028:1028:,11,0818502042,logout:/home/m26413140:/bin/bash
+m26413058:x:1029:1029:,,,:/home/m26413058:/bin/bash
+m26412115:x:1030:1030::/home/m26412115:/bin/sh
+m26413069:x:1031:1031:,,,083808492292:/home/m26413069:/bin/bash
+m26412068:x:1032:1032:,,,:/home/m26412068:/bin/bash
+m26413053:x:1033:1033::/home/m26413053:/bin/bash
+m26413105:x:1034:1034::/home/m26413105:/bin/bash
+m26412154:x:1035:1035:,^C,,:/home/m26412154:/bin/bash
+m26412155:x:1036:1036::/home/m26412155:/bin/sh
+m26413040:x:1037:1037:,,,:/home/m26413040:/bin/bash
+m26413159:x:1038:1038::/home/m26413159:/bin/bash
+m26413004:x:1039:1039::/home/m26413004:/bin/bash
+m26412100:x:1040:1040:,,,:/home/m26412100:/bin/bash
+messagebus:x:105:108::/var/run/dbus:/bin/false
+mysql:x:107:111:MySQL Server,,,:/nonexistent:/bin/false
+m26411084:x:1041:1041:,,,:/home/m26411084:/bin/bash
+hnpalit:x:1042:1042:Henry Palit,,,:/home/hnpalit:/bin/bash
+m26412101:x:1043:1043:,,,:/home/m26412101:/bin/bash
+m26412131:x:1045:1045:,,,:/home/m26412131:/bin/bash
+m26412152:x:1046:1046:,,,:/home/m26412152:/bin/bash
+m26412158:x:1047:1047:,,,:/home/m26412158:/bin/bash
+m26413019:x:1048:1048:,,,:/home/m26413019:/bin/bash
+m26413021:x:1049:1049:,,,:/home/m26413021:/bin/bash
+m26413022:x:1050:1050:,,,:/home/m26413022:/bin/bash
+m26413024:x:1051:1051:,,,:/home/m26413024:/bin/bash
+m26413026:x:1052:1052:,,,:/home/m26413026:/bin/bash
+m26413044:x:1053:1053:,,,:/home/m26413044:/bin/bash
+m26413054:x:1054:1054:,,,:/home/m26413054:/bin/bash
+m26413064:x:1055:1055:,,,:/home/m26413064:/bin/bash
+m26413065:x:1056:1056:,,,:/home/m26413065:/bin/bash
+m26413070:x:1057:1057:,,,:/home/m26413070:/bin/bash
+m26413077:x:1058:1058:,,,:/home/m26413077:/bin/bash
+m26413087:x:1059:1059:,,,:/home/m26413087:/bin/bash
+m26413089:x:1060:1060:,,,:/home/m26413089:/bin/bash
+m26413100:x:1061:1061:,,,:/home/m26413100:/bin/bash
+m26413117:x:1062:1062:,,,:/home/m26413117:/bin/bash
+m26413128:x:1063:1063:,,,:/home/m26413128:/bin/bash
+m26413131:x:1064:1064:,,,:/home/m26413131:/bin/bash
+m26413137:x:1065:1065:,,,:/home/m26413137:/bin/bash
+m26413141:x:1066:1066:,,,:/home/m26413141:/bin/bash
+m26413147:x:1067:1067:,,,:/home/m26413147:/bin/bash
+m26413155:x:1068:1068:,,,:/home/m26413155:/bin/bash
+m26413156:x:1069:1069:,,,:/home/m26413156:/bin/bash
+m26413172:x:1070:1070:,,,:/home/m26413172:/bin/bash
+m26413030:x:1071:1071::/home/m26413030:/bin/bash
+m26413059:x:1072:1072::/home/m26413059:/bin/bash
+m26413020:x:1073:1073::/home/m26413020:/bin/bash
+m26413075:x:1074:1074::/home/m26413075:/bin/bash
+m26413076:x:1075:1075::/home/m26413076:/bin/bash
+m26413067:x:1076:1076::/home/m26413067:/bin/bash
+m26413079:x:1077:1077::/home/m26413079:/bin/bash
+m26413057:x:1078:1078::/home/m26413057:/bin/bash
+m26413041:x:1079:1079::/home/m26413041:/bin/bash
+m26413010:x:1080:1080::/home/m26413010:/bin/bash
+m26413073:x:1081:1081::/home/m26413073:/bin/bash
+m26413135:x:1082:1082::/home/m26413135:/bin/bash
+m26413027:x:1083:1083::/home/m26413027:/bin/bash
+m26413098:x:1084:1084::/home/m26413098:/bin/bash
+m26413086:x:1085:1085::/home/m26413086:/bin/bash
+m26413016:x:1086:1086::/home/m26413016:/bin/bash
+m26413046:x:1087:1087::/home/m26413046:/bin/bash
+m26413009:x:1088:1088::/home/m26413009:/bin/bash
+m26413107:x:1089:1089::/home/m26413107:/bin/bash
+m26413108:x:1090:1090::/home/m26413108:/bin/bash
+m26413111:x:1091:1091::/home/m26413111:/bin/bash
+m26413062:x:1092:1092::/home/m26413062:/bin/bash
+m26413118:x:1093:1093::/home/m26413118:/bin/bash
+m26413119:x:1094:1094::/home/m26413119:/bin/bash
+m26413096:x:1095:1095::/home/m26413096:/bin/bash
+m26413104:x:1096:1096::/home/m26413104:/bin/bash
+m26413014:x:1097:1097::/home/m26413014:/bin/bash
+m26413056:x:1098:1098::/home/m26413056:/bin/bash
+m26413018:x:1099:1099::/home/m26413018:/bin/bash
+m26413081:x:1100:1100::/home/m26413081:/bin/bash
+m26413043:x:1101:1101::/home/m26413043:/bin/bash
+m26413029:x:1102:1102::/home/m26413029:/bin/bash
+m26413109:x:1103:1103::/home/m26413109:/bin/bash
+m26413047:x:1104:1104:,,,:/home/m26413047:/bin/bash
+m26413048:x:1105:1105:,,,:/home/m26413048:/bin/bash
+m26413049:x:1106:1106:,,,:/home/m26413049:/bin/bash
+m26413074:x:1107:1107:,,,:/home/m26413074:/bin/bash
+m26413099:x:1108:1108:,,,:/home/m26413099:/bin/bash
+m26413120:x:1109:1109:,,,:/home/m26413120:/bin/bash
+m26413123:x:1110:1110:,,,:/home/m26413123:/bin/bash
+m26413124:x:1111:1111:,,,:/home/m26413124:/bin/bash
+m26413136:x:1112:1112:,,,:/home/m26413136:/bin/bash
+m26413166:x:1113:1113:,,,:/home/m26413166:/bin/bash
+m26411103:x:1114:1114:Sontama Baktiano Ibe,,,:/home/m26411103:/bin/bash
+albert:x:1115:1115:Albert Leonardo Pisa,,,:/home/albert:/bin/bash
+m26413078:x:1116:1116:,,,:/home/m26413078:/bin/bash
+m26413097:x:1117:1117:,,,:/home/m26413097:/bin/bash
+m26413113:x:1118:1118:,,,:/home/m26413113:/bin/bash
+mongodb:x:108:65534::/home/mongodb:/bin/false
+rosalina:x:1119:1119:,,,:/home/rosalina:/bin/bash
+m26411126:x:1120:1120:Andreas Harison,TA,,:/home/m26411126:/bin/bash
+ariani:x:1121:1121:,,,:/home/ariani:/bin/bash
+m26411161:x:1122:1122:,,,:/home/m26411161:/bin/bash
+m26411091:x:1123:1123:,,,:/home/m26411091:/bin/bash
+m26411135:x:1124:1124:,,,:/home/m26411135:/bin/bash
+m26411077:x:1125:1125:,,,:/home/m26411077:/bin/bash
+m26411114:x:1126:1126:,,,:/home/m26411114:/bin/bash
+m26411151:x:1127:1127:,,,:/home/m26411151:/bin/bash
+m26411108:x:1128:1128:,,,:/home/m26411108:/bin/bash
+m26411158:x:1129:1129:,,,:/home/m26411158:/bin/bash
+m26411106:x:1130:1130:,,,:/home/m26411106:/bin/bash
+m26411072:x:1131:1131:,,,:/home/m26411072:/bin/bash
+tomcat6:x:109:114::/usr/share/tomcat6:/bin/false
+m26411019:x:1044:1044:,,,:/home/m26411019:/bin/bash
+proftpd:x:110:65534::/var/run/proftpd:/bin/false
+ftp:x:111:65534::/srv/ftp:/bin/false
+m26411097:x:1132:1132:,,,:/home/m26411097:/bin/bash
+colord:x:112:117:colord colour management daemon,,,:/var/lib/colord:/bin/false
+saned:x:113:118::/home/saned:/bin/false
+openfire:x:114:119:Openfire XMPP server,,,:/var/lib/openfire:/bin/false
+aitaa:x:1133:1133:AIT Alumni,,,:/home/aitaa:/bin/bash
+ryan:x:1134:1134:Ryan Christian Wiguno,,,:/home/ryan:/bin/bash
+dovecot:x:115:120:Dovecot mail server,,,:/usr/lib/dovecot:/bin/false
+dovenull:x:116:65534:Dovecot login user,,,:/nonexistent:/bin/false
+ks10n:x:1135:1135:10 November Pahlawan,,,:/home/ks10n:/bin/bash
+m26412034:x:1136:1136:Eric Prabowo,,,:/home/m26412034:/bin/bash
+rina:x:1137:1137:Rina Savista,26413006,,:/home/rina:/bin/bash
+dine:x:1138:1138:dine.petra.ac.id,,,:/home/dine:/bin/bash
+m26412005:x:1139:1139:Robby Christianto,,,:/home/m26412005:/bin/bash
+m26412073:x:1140:1140:Sulistya,,,:/home/m26412073:/bin/bash
+m26412043:x:1141:1141:Robert Gosal,,,:/home/m26412043:/bin/bash
+m26412116:x:1142:1142:,,,:/home/m26412116:/bin/bash
+m26412141:x:1143:1143:Arif Setiawan,,,:/home/m26412141:/bin/bash
+m26412056:x:1144:1144:Stevanus Michael Sugiarto,,,:/home/m26412056:/bin/bash
+m26412092:x:1145:1145:Fransisco Poernomo,,,:/home/m26412092:/bin/bash
+m26412084:x:1146:1146:Kevin Yanwar,,,:/home/m26412084:/bin/bash
+postgres:x:117:121:PostgreSQL administrator,,,:/var/lib/postgresql:/bin/bash
+m26411134:x:1147:1147:Widya Ongels,,,:/home/m26411134:/bin/bash
+m26412013:x:1148:1148:,,,:/home/m26412013:/bin/bash
+m26412001:x:1149:1149:,,,:/home/m26412001:/bin/bash
+m26412008:x:1150:1150:,,,:/home/m26412008:/bin/bash
+m26411170:x:1151:1151:,,,:/home/m26411170:/bin/bash
+m26412146:x:1152:1152:Hendra Gunawan,,,:/home/m26412146:/bin/bash
+kristo:x:1153:1153:Kristo,,,:/home/kristo:/bin/bash
+m26412126:x:1154:1154:Rendra Hadi,,,:/home/m26412126:/bin/bash
+kristo2:x:1155:1155::/home/kristo2:/bin/sh
+m26414007:x:1156:1156::/home/m26414007:/bin/bash
+m26414012:x:1157:1157::/home/m26414012:/bin/bash
+m26414017:x:1158:1158::/home/m26414017:/bin/bash
+m26414018:x:1159:1159::/home/m26414018:/bin/bash
+m26414030:x:1160:1160::/home/m26414030:/bin/bash
+m26414032:x:1161:1161::/home/m26414032:/bin/bash
+m26414033:x:1162:1162::/home/m26414033:/bin/bash
+m26414039:x:1163:1163::/home/m26414039:/bin/bash
+m26414048:x:1164:1164::/home/m26414048:/bin/bash
+m26414059:x:1165:1165::/home/m26414059:/bin/bash
+m26414064:x:1166:1166::/home/m26414064:/bin/bash
+m26414072:x:1167:1167::/home/m26414072:/bin/bash
+m26414075:x:1168:1168::/home/m26414075:/bin/bash
+m26414077:x:1169:1169::/home/m26414077:/bin/bash
+m26414079:x:1170:1170::/home/m26414079:/bin/bash
+m26414080:x:1171:1171::/home/m26414080:/bin/bash
+m26414083:x:1172:1172::/home/m26414083:/bin/bash
+m26414085:x:1173:1173::/home/m26414085:/bin/bash
+m26414086:x:1174:1174::/home/m26414086:/bin/bash
+m26414088:x:1175:1175::/home/m26414088:/bin/bash
+m26414096:x:1176:1176::/home/m26414096:/bin/bash
+m26414098:x:1177:1177::/home/m26414098:/bin/bash
+m26414099:x:1178:1178::/home/m26414099:/bin/bash
+m26414100:x:1179:1179::/home/m26414100:/bin/bash
+m26414104:x:1180:1180::/home/m26414104:/bin/bash
+m26414105:x:1181:1181::/home/m26414105:/bin/bash
+m26414113:x:1182:1182::/home/m26414113:/bin/bash
+m26414123:x:1183:1183::/home/m26414123:/bin/bash
+m26414124:x:1184:1184::/home/m26414124:/bin/bash
+m26414130:x:1185:1185::/home/m26414130:/bin/bash
+m26414137:x:1186:1186::/home/m26414137:/bin/bash
+m26414138:x:1187:1187::/home/m26414138:/bin/bash
+m26414142:x:1188:1188::/home/m26414142:/bin/bash
+m26414143:x:1189:1189::/home/m26414143:/bin/bash
+m26414145:x:1190:1190::/home/m26414145:/bin/bash
+m26414146:x:1191:1191::/home/m26414146:/bin/bash
+m26414062:x:1192:1192::/home/m26414062:/bin/bash
+m26414054:x:1193:1193::/home/m26414054:/bin/bash
+m26414052:x:1194:1194::/home/m26414052:/bin/bash
+m26414037:x:1195:1195::/home/m26414037:/bin/bash
+m26414057:x:1196:1196::/home/m26414057:/bin/bash
+m26414050:x:1197:1197::/home/m26414050:/bin/bash
+m26414135:x:1198:1198::/home/m26414135:/bin/bash
+m26414040:x:1199:1199::/home/m26414040:/bin/bash
+m26414004:x:1200:1200::/home/m26414004:/bin/bash
+m26414087:x:1201:1201::/home/m26414087:/bin/bash
+m26414024:x:1202:1202::/home/m26414024:/bin/bash
+m26414035:x:1203:1203::/home/m26414035:/bin/bash
+m26413045:x:1204:1204::/home/m26413045:/bin/bash
+m26414022:x:1205:1205::/home/m26414022:/bin/bash
+m26414006:x:1206:1206::/home/m26414006:/bin/bash
+m26413088:x:1207:1207::/home/m26413088:/bin/bash
+m26414149:x:1208:1208::/home/m26414149:/bin/bash
+m26414132:x:1209:1209::/home/m26414132:/bin/bash
+m26414041:x:1210:1210::/home/m26414041:/bin/bash
+m26414093:x:1211:1211::/home/m26414093:/bin/bash
+m26414148:x:1212:1212::/home/m26414148:/bin/bash
+m26414003:x:1213:1213::/home/m26414003:/bin/bash
+m26414027:x:1214:1214::/home/m26414027:/bin/bash
+m26414151:x:1215:1215::/home/m26414151:/bin/bash
+m26414117:x:1216:1216::/home/m26414117:/bin/bash
+m26414108:x:1217:1217:,,,:/home/m26414108:/bin/bash
+m26414010:x:1218:1218:,,,:/home/m26414010:/bin/bash
+m26414070:x:1219:1219:,,,:/home/m26414070:/bin/bash
+m26414029:x:1220:1220:,,,:/home/m26414029:/bin/bash
+m26413162:x:1221:1221:,,,:/home/m26413162:/bin/bash
+m26414013:x:1222:1222:,,,:/home/m26414013:/bin/bash
+m26414014:x:1223:1223:,,,:/home/m26414014:/bin/bash
+m26414016:x:1224:1224:,,,:/home/m26414016:/bin/bash
+m26414025:x:1225:1225:,,,:/home/m26414025:/bin/bash
+m26414038:x:1226:1226:,,,:/home/m26414038:/bin/bash
+m26414046:x:1227:1227:,,,:/home/m26414046:/bin/bash
+m26414056:x:1228:1228:,,,:/home/m26414056:/bin/bash
+m26414058:x:1229:1229:,,,:/home/m26414058:/bin/bash
+m26414060:x:1230:1230:,,,:/home/m26414060:/bin/bash
+m26414065:x:1231:1231:,,,:/home/m26414065:/bin/bash
+m26414067:x:1232:1232:,,,:/home/m26414067:/bin/bash
+m26414074:x:1233:1233:,,,:/home/m26414074:/bin/bash
+m26414084:x:1234:1234:,,,:/home/m26414084:/bin/bash
+m26414091:x:1235:1235:,,,:/home/m26414091:/bin/bash
+m26414115:x:1236:1236:,,,:/home/m26414115:/bin/bash
+m26414122:x:1237:1237:,,,:/home/m26414122:/bin/bash
+m26414128:x:1238:1238:,,,:/home/m26414128:/bin/bash
+m26414133:x:1239:1239:,,,:/home/m26414133:/bin/bash
+m26414114:x:1240:1240::/home/m26414114:/bin/bash
+kristo_u:x:1241:1241::/home/kristo_u:/bin/bash
+m26414045:x:1242:1242::/home/m26414045:/bin/bash
+m26412107:x:1243:1243:,,,:/home/m26412107:/bin/bash
+m26412177:x:1244:1244:Greffika,,,:/home/m26412177:/bin/bash
+m26412076:x:1245:1245:,,,:/home/m26412076:/bin/bash
+m26412085:x:1246:1246:,,,:/home/m26412085:/bin/bash
+m26412078:x:1247:1247:Billy Abraham,,,:/home/m26412078:/bin/bash
+m26412067:x:1248:1248:,,,:/home/m26412067:/bin/bash
+m26412066:x:1249:1249:Andy Yunata,,,:/home/m26412066:/bin/bash
+m26412082:x:1250:1250:Nyoto Wijaya,,,:/home/m26412082:/bin/bash
+m26413121e:x:1251:1251::/home/m26413121e:/bin/sh
+m26412168:x:1252:1252:Evan Tanjaya,,,:/home/m26412168:/bin/bash
+m26412069:x:1253:1253:,,,:/home/m26412069:/bin/bash
+m26411101:x:1254:1254:Kevin Andrean Mariyo,,,:/home/m26411101:/bin/bash
+m26412096:x:1255:1255:,,,:/home/m26412096:/bin/bash
+m26412036:x:1256:1256:,,,:/home/m26412036:/bin/bash
+m26412156:x:1257:1257:,,,:/home/m26412156:/bin/bash
+m26412139:x:1258:1258:,,,:/home/m26412139:/bin/bash
+m26412106:x:1259:1259:Denny Yosowanto,,,:/home/m26412106:/bin/bash
+pic:x:1260:1260::/home/pic:/bin/bash
+m26414008:x:1261:1261:,,,:/home/m26414008:/bin/bash
+m26411130:x:1262:1262:,,,:/home/m26411130:/bin/bash
+m26412098:x:1263:1263:,,,:/home/m26412098:/bin/bash
+radvd:x:118:65534::/var/run/radvd:/bin/false
+inyoot:x:1264:1264:Iwan Nyoto,,,:/home/inyoot:/bin/bash
+vanesa:x:1265:1265:Vanesa Yuwono,Puskom Lab A,,:/home/vanesa:/bin/bash
+m26415048:x:1266:1266:,,,:/home/m26415048:/bin/bash
+m26415029:x:1267:1267::/home/m26415029:/bin/bash
+m26415133:x:1268:1268::/home/m26415133:/bin/bash
+m26415117:x:1269:1269::/home/m26415117:/bin/bash
+m26415108:x:1270:1270::/home/m26415108:/bin/bash
+m26415121:x:1271:1271:,,,:/home/m26415121:/bin/bash
+m26415026:x:1272:1272::/home/m26415026:/bin/bash
+m26415110:x:1273:1273::/home/m26415110:/bin/bash
+m26415134:x:1274:1274:,,,:/home/m26415134:/bin/bash
+m26415141:x:1275:1275::/home/m26415141:/bin/bash
+m26415145:x:1276:1276::/home/m26415145:/bin/bash
+m26413025:x:1277:1277:,,,:/home/m26413025:/bin/bash
+m26415051:x:1278:1278:,,,:/home/m26415051:/bin/bash
+m26415068:x:1279:1279::/home/m26415068:/bin/bash
+m26412097:x:1280:1280::/home/m26412097:/bin/bash
+m26415031:x:1281:1281::/home/m26415031:/bin/bash
+m26414107:x:1282:1282:Bagus Dwi Maulana,puskom lab a,,:/home/m26414107:/bin/bash
+m26415001:x:1283:1283:,,,:/home/m26415001:/bin/bash
+m26413126:x:1284:1284:bryan,tos,,:/home/m26413126:/bin/bash
+m26415180:x:1285:1285:Amanda Tanari,,,:/home/m26415180:/bin/bash
+m26415177:x:1286:1286:Bobby Irawan,TOS,,:/home/m26415177:/bin/bash
+m26415172:x:1287:1287:Satria Damai K,TOS,,:/home/m26415172:/bin/bash
+m26415171:x:1288:1288:Antonio Chandra,TOS,,:/home/m26415171:/bin/bash
+m26415147:x:1289:1289:Andy Sukanto K,TOS,,:/home/m26415147:/bin/bash
+m26415128:x:1290:1290:Daniswara Kusuma A,TOS,,:/home/m26415128:/bin/bash
+m26415012:x:1291:1291:Joshua Maximillian,TOS,,:/home/m26415012:/bin/bash
+m26415005:x:1292:1292:Sanitya Purnomo,TOS,,:/home/m26415005:/bin/bash
+m26415003:x:1293:1293:Ignatius Leonardo,TOS,,:/home/m26415003:/bin/bash
+m26413168:x:1294:1294:Theodorus Natanael,TOS,,:/home/m26413168:/bin/bash
+m26413151:x:1295:1295:Hendrik Dwi P,TOS,,:/home/m26413151:/bin/bash
+m26413142:x:1296:1296:Maria Alvinna,TOS,,:/home/m26413142:/bin/bash
+m26413121:x:1297:1297:Ignatius Dwihan P,TOS,,:/home/m26413121:/bin/bash
+m26413115:x:1298:1298:Kevin,TOS,,:/home/m26413115:/bin/bash
+m26413101:x:1299:1299:Steven Suteja,TOS,,:/home/m26413101:/bin/bash
+m26413094:x:1300:1300:Reynaldo Yoda W,TOS,,:/home/m26413094:/bin/bash
+m26413033:x:1301:1301:Steven Jonathan Hans,TOS,,:/home/m26413033:/bin/bash
+m26414031:x:1302:1302:Stevanus Budi W,TOS,,:/home/m26414031:/bin/bash
+m26414061:x:1303:1303:Indra Setiawan,TOS,,:/home/m26414061:/bin/bash
+m26414094:x:1304:1304:Riesky Akbar M,TOS,,:/home/m26414094:/bin/bash
+dnsmasq:x:119:65534:dnsmasq,,,:/var/lib/misc:/bin/false
+gitlog:x:120:65534::/nonexistent:/bin/false
+gitdaemon:x:121:65534::/nonexistent:/bin/false
+m26414020:x:1305:1305:Gloria Stefani,,,:/home/m26414020:/bin/bash
+m26414021:x:1306:1306:,,,:/home/m26414021:/bin/bash
+m26414034:x:1307:1307:,,,:/home/m26414034:/bin/bash
+m26411142:x:1308:1308:,,,:/home/m26411142:/bin/bash
+m26415039:x:1309:1309:Kevin Nyoto,,,:/home/m26415039:/bin/bash
+m26412040:x:1310:1310:,,,:/home/m26412040:/bin/bash
+m26412037:x:1311:1311:,,,:/home/m26412037:/bin/bash
+m26413013:x:1312:1312::/home/m26413013:/bin/bash
+m26412160:x:1313:1313:,,,:/home/m26412160:/bin/bash
+m26412050:x:1314:1314:,,,:/home/m26412050:/bin/bash
+absensi:x:1315:1315::/home/absensi:/bin/sh
+manpro_absensi:x:1316:1316:manpro,absensi,08156565,12135,1231:/home/manpro_absensi:/bin/bash
+clar:x:1317:1317:Clariza,dsa,das,dsad,sdad:/home/clar:/bin/bash
+sinsky:x:1318:1318:Sinsky,dsa,sdsa,dasda,sada:/home/sinsky:/bin/bash
+m26411132:x:1319:1319:Kenny AS,,,:/home/m26411132:/bin/bash
+loren:x:1320:1320::/home/loren:/bin/sh
+test:x:1321:1321:fdsf,fdsfds,fsd,fds,fsd:/home/test:/bin/bash
+smmta:x:122:124:Mail Transfer Agent,,,:/var/lib/sendmail:/bin/false
+smmsp:x:123:125:Mail Submission Program,,,:/var/lib/sendmail:/bin/false
+m26410060:x:1322:1322:,,,:/home/m26410060:/bin/bash
+yustus:x:1323:13q-,,:/home/m26415037:/bin/bash/bash
+m26415160:x:1326:1326::/home/m26415160:/bin/bash8:/home/m26415046:/bin/bash
+m26415081:x:1327:1327:,,,:/home/m26415081:/bin/bash
+m26415049:x:1328:1328::/home/m26415049:/bin/bash
+m26415064:x:1329:1329::/home/m26415064:/bin/bash
+m26415114:x:1330:1330::/home/m26415114:/bin/bash
+m26415178:x:1331:1331::/home/m26415178:/bin/bash
+m26415019:x:1332:1332::/home/m26415019:/bin/bash
+m26415006:x:1333:1333::/home/m26415006:/bin/bash
+m26415038:x:1334:1334::/home/m26415038:/bin/bash
+m26415126:x:1335:1335,,:/home/m26415126:/bin/bash
+m26415106:x:1336:1336:,Danny Lionel,,:/home/m26415106:/bin/bash
+m26415170:x:1337:1337::/home/m26415170:/bin/bash
+m26415024:x:1338:1338::/home/m26415024:/bin/bash
+m26415136:x:1339:1339::/home/m26415136:/bin/bash
+m26415009:x:1340:1340:,,,:/home/m26415009:/bin/bash
+m26415052:x:1341:1341::/home/m26415052:/bin/bash
+m26415059:x:1342:1342::/home/m26415059:/bin/bash
+m26415089:x:1343:1343::/home/m26415089:/bin/bash
+m26415155:x:1344:1344::/home/m26415155:/bin/bash
+m26415040:x:1345:1345::/home/m26415040:/bin/bash
+m26415079:x:1346:1346::/home/m26415079:/bin/bash
+m26415069:x:1347:1347:,,,:/home/m26415069:/bin/bash
+m26415076:x:1348:1348:,,,:/home/m26415076:/bin/bash
+m26415163:x:1349:1349:,,,:/home/m26415163:/bin/bash
+m26415158:x:1350:1350::/home/m26415158:/bin/bash
+m26415004:x:1351:1351::/home/m26415004:/bin/bash
+m26415045:x:1352:1352::/home/m26415045:/bin/bash
+m26415097:x:1353:1353::/home/m26415097:/bin/bash
+m26415007:x:1354:1354:,,,:/home/m26415007:/bin/bash
+m26415010:x:1355:1355:,,,:/home/m26415010:/bin/bash
+m26415018:x:1356:1356:,,,:/home/m26415018:/bin/bash
+m26415020:x:1357:1357:,,,:/home/m26415020:/bin/bash
+m26415030:x:1358:1358:,,,:/home/m26415030:/bin/bash
+m26415033:x:1359:1359:,,,:/home/m26415033:/bin/bash
+m26415042:x:1360:1360:,,,:/home/m26415042:/bin/bash
+m26415043:x:1361:1361:,,,:/home/m26415043:/bin/bash
+m26415055:x:1362:1362:,,,:/home/m26415055:/bin/bash
+m26415056:x:1363:1363:,,,:/home/m26415056:/bin/bash
+m26415058:x:1364:1364:,,,:/home/m26415058:/bin/bash
+m26415061:x:1365:1365:,,,:/home/m26415061:/bin/bash
+m26415062:x:1366:1366:,,,:/home/m26415062:/bin/bash
+m26415065:x:1367:1367:,,,:/home/m26415065:/bin/bash
+m26415071:x:1368:1368:,,,:/home/m26415071:/bin/bash
+m26415080:x:1369:1369:,,,:/home/m26415080:/bin/bash
+m26415083:x:1370:1370:,,,:/home/m26415083:/bin/bash
+m26415086:x:1371:1371:,,,:/home/m26415086:/bin/bash
+m26415087:x:1372:1372:,,,:/home/m26415087:/bin/bash
+m26415088:x:1373:1373:,,,:/home/m26415088:/bin/bash
+m26415093:x:1374:1374:,,,:/home/m26415093:/bin/bash
+m26415095:x:1375:1375:,,,:/home/m26415095:/bin/bash
+m26415096:x:1376:1376:,,,:/home/m26415096:/bin/bash
+m26415111:x:1377:1377:,,,:/home/m26415111:/bin/bash
+m26415112:x:1378:1378:,,,:/home/m26415112:/bin/bash
+m26415120:x:1379:1379:,,,:/home/m26415120:/bin/bash
+m26415123:x:1380:1380:,,,:/home/m26415123:/bin/bash
+m26415124:x:1381:1381:,,,:/home/m26415124:/bin/bash
+m26415130:x:1382:1382:,,,:/home/m26415130:/bin/bash
+m26415142:x:1383:1383:,,,:/home/m26415142:/bin/bash
+m26415148:x:1384:1384:,,,:/home/m26415148:/bin/bash
+m26415149:x:1385:1385:,,,:/home/m26415149:/bin/bash
+m26415150:x:1386:1386:,,,:/home/m26415150:/bin/bash
+m26415152:x:1387:1387:,,,:/home/m26415152:/bin/bash
+m26415153:x:1388:1388:,,,:/home/m26415153:/bin/bash
+m26415167:x:1389:1389:,,,:/home/m26415167:/bin/bash
+m26415175:x:1390:1390:,,,:/home/m26415175:/bin/bash
+m26415179:x:1391:1391:,,,:/home/m26415179:/bin/bash
+m26415183:x:1392:1392:,,,:/home/m26415183:/bin/bash
+m26415129:x:1394:1394:,,,:/home/m26415129:/bin/bash
+m26415002:x:1393:1393:MELINDA CHRISTY ROEDYANTO,,,:/home/m26415002:/bin/bash
+m26415016:x:1395:1395::/home/m26415016:/bin/bash
+m26415021:x:1396:1396::/home/m26415021:/bin/bash
+m26415027:x:1397:1397::/home/m26415027:/bin/bash
+m26415060:x:1398:1398::/home/m26415060:/bin/bash
+m26415067:x:1399:1399::/home/m26415067:/bin/bash
+m26415070:x:1400:1400::/home/m26415070:/bin/bash
+m26415082:x:1401:1401::/home/m26415082:/bin/bash
+m26415090:x:1402:1402::/home/m26415090:/bin/bash
+m26415115:x:1403:1403::/home/m26415115:/bin/bash
+m26415119:x:1404:1404::/home/m26415119:/bin/bash
+m26415135:x:1405:1405::/home/m26415135:/bin/bash
+m26415169:x:1406:1406::/home/m26415169:/bin/bash
+m26415181:x:1407:1407::/home/m26415181:/bin/bash
+m26415113:x:1408:1408:,,,:/home/m26415113:/bin/bash
+iwanns:x:1409:1409:,,,:/home/iwanns:/bin/bash
+m26415115@debian7:~$ ls $HOME
+compoundpython.py  fruits2.txt  hello.py     readfile.py  repo$
+fruit.txt          hello.c      public_html  repo         tesphyton.py
+m26415115@debian7:~$ date
+Mon Mar 13 22:31:48 WIB 2017
+m26415115@debian7:~$ cat /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:
+fax:x:21:
+voice:x:22:
+cdrom:x:24:lamidjan
+floppy:x:25:lamidjan
+tape:x:26:
+sudo:x:27:manpro_absensi
+audio:x:29:lamidjan
+dip:x:30:lamidjan
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:lamidjan
+sasl:x:45:
+plugdev:x:46:lamidjan
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+libuuid:x:101:
+crontab:x:102:
+Debian-exim:x:103:
+mlocate:x:104:
+ssh:x:105:
+lamidjan:x:1000:
+ntp:x:106:
+justin:x:1001:
+m26413034:x:1002:
+m26410097:x:1003:
+m26412148:x:1004:
+m26413003:x:1005:
+m26412023:x:1006:
+m26412171:x:1007:
+m26412137:x:1008:
+m26413006:x:1009:
+m26410004:x:1010:
+m26413007:x:1011:
+m26412145:x:1012:
+m26413005:x:1013:
+m26413139:x:1014:
+m26412130:x:1015:
+m26413017:x:1016:
+m26413051:x:1017:
+m26413031:x:1018:
+m26413090:x:1019:
+m26413032:x:1020:
+m26413061:x:1021:
+m26413002:x:1022:
+m26409043:x:1023:
+m26413012:x:1024:
+m26413163:x:1025:
+m26412170:x:1026:
+m26413112:x:1027:
+m26413140:x:1028:
+m26413058:x:1029:
+m26412115:x:1030:
+m26413069:x:1031:
+m26412068:x:1032:
+m26413053:x:1033:
+m26413105:x:1034:
+m26412154:x:1035:
+m26412155:x:1036:
+m26413040:x:1037:
+m26413159:x:1038:
+m26413004:x:1039:
+m26412100:x:1040:
+ssl-cert:x:107:postgres
+messagebus:x:108:
+mysql:x:111:
+m26411084:x:1041:
+sambashare:x:112:
+hnpalit:x:1042:
+m26412101:x:1043:
+m26412131:x:1045:
+m26412152:x:1046:
+m26412158:x:1047:
+m26413019:x:1048:
+m26413021:x:1049:
+m26413022:x:1050:
+m26413024:x:1051:
+m26413026:x:1052:
+m26413044:x:1053:
+m26413054:x:1054:
+m26413064:x:1055:
+m26413065:x:1056:
+m26413070:x:1057:
+m26413077:x:1058:
+m26413087:x:1059:
+m26413089:x:1060:
+m26413100:x:1061:
+m26413117:x:1062:
+m26413128:x:1063:
+m26413131:x:1064:
+m26413137:x:1065:
+m26413141:x:1066:
+m26413147:x:1067:
+m26413155:x:1068:
+m26413156:x:1069:
+m26413172:x:1070:
+m26413030:x:1071:
+m26413059:x:1072:
+m26413020:x:1073:
+m26413075:x:1074:
+m26413076:x:1075:
+m26413067:x:1076:
+m26413079:x:1077:
+m26413057:x:1078:
+m26413041:x:1079:
+m26413010:x:1080:
+m26413073:x:1081:
+m26413135:x:1082:
+m26413027:x:1083:
+m26413098:x:1084:
+m26413086:x:1085:
+m26413016:x:1086:
+m26413046:x:1087:
+m26413009:x:1088:
+m26413107:x:1089:
+m26413108:x:1090:
+m26413111:x:1091:
+m26413062:x:1092:
+m26413118:x:1093:
+m26413119:x:1094:
+m26413096:x:1095:
+m26413104:x:1096:
+m26413014:x:1097:
+m26413056:x:1098:
+m26413018:x:1099:
+m26413081:x:1100:
+m26413043:x:1101:
+m26413029:x:1102:
+m26413109:x:1103:
+m26413047:x:1104:
+m26413048:x:1105:
+m26413049:x:1106:
+m26413074:x:1107:
+m26413099:x:1108:
+m26413120:x:1109:
+m26413123:x:1110:
+m26413124:x:1111:
+m26413136:x:1112:
+m26413166:x:1113:
+m26411103:x:1114:
+albert:x:1115:
+m26413078:x:1116:
+m26413097:x:1117:
+m26413113:x:1118:
+mongodb:x:113:mongodb
+rosalina:x:1119:
+m26411126:x:1120:
+ariani:x:1121:
+m26411161:x:1122:
+m26411091:x:1123:
+m26411135:x:1124:
+m26411077:x:1125:
+m26411114:x:1126:
+m26411151:x:1127:
+m26411108:x:1128:
+m26411158:x:1129:
+m26411106:x:1130:
+m26411072:x:1131:
+tomcat6:x:114:
+m26411019:x:1044:
+m26411097:x:1132:
+fuse:x:115:
+scanner:x:116:saned
+colord:x:117:
+saned:x:118:
+openfire:x:119:
+aitaa:x:1133:
+ryan:x:1134:
+dovecot:x:120:
+ks10n:x:1135:
+m26412034:x:1136:
+rina:x:1137:
+dine:x:1138:
+m26412005:x:1139:
+m26412073:x:1140:
+m26412043:x:1141:
+m26412116:x:1142:
+m26412141:x:1143:
+m26412056:x:1144:
+m26412092:x:1145:
+m26412084:x:1146:
+postgres:x:121:
+m26411134:x:1147:
+m26412013:x:1148:
+m26412001:x:1149:
+m26412008:x:1150:
+m26411170:x:1151:
+m26412146:x:1152:
+kristo:x:1153:
+m26412126:x:1154:
+kristo2:x:1155:
+m26414007:x:1156:
+m26414012:x:1157:
+m26414017:x:1158:
+m26414018:x:1159:
+m26414030:x:1160:
+m26414032:x:1161:
+m26414033:x:1162:
+m26414039:x:1163:
+m26414048:x:1164:
+m26414059:x:1165:
+m26414064:x:1166:
+m26414072:x:1167:
+m26414075:x:1168:
+m26414077:x:1169:
+m26414079:x:1170:
+m26414080:x:1171:
+m26414083:x:1172:
+m26414085:x:1173:
+m26414086:x:1174:
+m26414088:x:1175:
+m26414096:x:1176:
+m26414098:x:1177:
+m26414099:x:1178:
+m26414100:x:1179:
+m26414104:x:1180:
+m26414105:x:1181:
+m26414113:x:1182:
+m26414123:x:1183:
+m26414124:x:1184:
+m26414130:x:1185:
+m26414137:x:1186:
+m26414138:x:1187:
+m26414142:x:1188:
+m26414143:x:1189:
+m26414145:x:1190:
+m26414146:x:1191:
+m26414062:x:1192:
+m26414054:x:1193:
+m26414052:x:1194:
+m26414037:x:1195:
+m26414057:x:1196:
+m26414050:x:1197:
+m26414135:x:1198:
+m26414040:x:1199:
+m26414004:x:1200:
+m26414087:x:1201:
+m26414024:x:1202:
+m26414035:x:1203:
+m26413045:x:1204:
+m26414022:x:1205:
+m26414006:x:1206:
+m26413088:x:1207:
+m26414149:x:1208:
+m26414132:x:1209:
+m26414041:x:1210:
+m26414093:x:1211:
+m26414148:x:1212:
+m26414003:x:1213:
+m26414027:x:1214:
+m26414151:x:1215:
+m26414117:x:1216:
+m26414108:x:1217:
+m26414010:x:1218:
+m26414070:x:1219:
+m26414029:x:1220:
+m26413162:x:1221:
+m26414013:x:1222:
+m26414014:x:1223:
+m26414016:x:1224:
+m26414025:x:1225:
+m26414038:x:1226:
+m26414046:x:1227:
+m26414056:x:1228:
+m26414058:x:1229:
+m26414060:x:1230:
+m26414065:x:1231:
+m26414067:x:1232:
+m26414074:x:1233:
+m26414084:x:1234:
+m26414091:x:1235:
+m26414115:x:1236:
+m26414122:x:1237:
+m26414128:x:1238:
+m26414133:x:1239:
+m26414114:x:1240:
+kristo_u:x:1241:
+m26414045:x:1242:
+m26412107:x:1243:
+m26412177:x:1244:
+m26412076:x:1245:
+m26412085:x:1246:
+m26412078:x:1247:
+m26412067:x:1248:
+m26412066:x:1249:
+m26412082:x:1250:
+m26413121e:x:1251:
+m26412168:x:1252:
+m26412069:x:1253:
+m26411101:x:1254:
+utempter:x:122:
+m26412096:x:1255:
+m26412036:x:1256:
+m26412156:x:1257:
+m26412139:x:1258:
+m26412106:x:1259:
+pic:x:1260:
+m26414008:x:1261:
+m26411130:x:1262:
+m26412098:x:1263:
+inyoot:x:1264:
+vanesa:x:1265:
+m26415048:x:1266:
+m26415029:x:1267:
+m26415133:x:1268:
+m26415117:x:1269:
+m26415108:x:1270:
+m26415121:x:1271:
+m26415026:x:1272:
+m26415110:x:1273:
+m26415134:x:1274:
+m26415141:x:1275:
+m26415145:x:1276:
+m26413025:x:1277:
+m26415051:x:1278:
+m26415068:x:1279:
+m26412097:x:1280:
+m26415031:x:1281:
+m26414107:x:1282:
+m26415001:x:1283:
+m26413126:x:1284:
+m26415180:x:1285:
+m26415177:x:1286:
+m26415172:x:1287:
+m26415171:x:1288:
+m26415147:x:1289:
+m26415128:x:1290:
+m26415012:x:1291:
+m26415005:x:1292:
+m26415003:x:1293:
+m26413168:x:1294:
+m26413151:x:1295:
+m26413142:x:1296:
+m26413121:x:1297:
+m26413115:x:1298:
+m26413101:x:1299:
+m26413094:x:1300:
+m26413033:x:1301:
+m26414031:x:1302:
+m26414061:x:1303:
+m26414094:x:1304:
+_cvsadmin:x:123:
+m26414020:x:1305:
+m26414021:x:1306:
+m26414034:x:1307:
+m26411142:x:1308:
+m26415039:x:1309:
+m26412040:x:1310:
+m26412037:x:1311:
+m26413013:x:1312:
+m26412160:x:1313:
+m26412050:x:1314:
+absensi:x:1315:
+manpro_absensi:x:1316:
+clar:x:1317:
+sinsky:x:1318:
+m26411132:x:1319:
+loren:x:1320:
+test:x:1321:
+smmta:x:124:
+smmsp:x:125:
+m26410060:x:1322:
+yustus:x:1323:
+m26415046:x:1324:
+m26415037:x:1325:
+m26415160:x:1326:
+m26415081:x:1327:
+m26415049:x:1328:
+m26415064:x:1329:
+m26415114:x:1330:
+m26415178:x:1331:
+m26415019:x:1332:
+m26415006:x:1333:
+m26415038:x:1334:
+m26415126:x:1335:
+m26415106:x:1336:
+m26415170:x:1337:
+m26415024:x:1338:
+m26415136:x:1339:
+m26415009:x:1340:
+m26415052:x:1341:
+m26415059:x:1342:
+m26415089:x:1343:
+m26415155:x:1344:
+m26415040:x:1345:
+m26415079:x:1346:
+m26415069:x:1347:
+m26415076:x:1348:
+m26415163:x:1349:
+m26415158:x:1350:
+m26415004:x:1351:
+m26415045:x:1352:
+m26415097:x:1353:
+m26415007:x:1354:
+m26415010:x:1355:
+m26415018:x:1356:
+m26415020:x:1357:
+m26415030:x:1358:
+m26415033:x:1359:
+m26415042:x:1360:
+m26415043:x:1361:
+m26415055:x:1362:
+m26415056:x:1363:
+m26415058:x:1364:
+m26415061:x:1365:
+m26415062:x:1366:
+m26415065:x:1367:
+m26415071:x:1368:
+m26415080:x:1369:
+m26415083:x:1370:
+m26415086:x:1371:
+m26415087:x:1372:
+m26415088:x:1373:
+m26415093:x:1374:
+m26415095:x:1375:
+m26415096:x:1376:
+m26415111:x:1377:
+m26415112:x:1378:
+m26415120:x:1379:
+m26415123:x:1380:
+m26415124:x:1381:
+m26415130:x:1382:
+m26415142:x:1383:
+m26415148:x:1384:
+m26415149:x:1385:
+m26415150:x:1386:
+m26415152:x:1387:
+m26415153:x:1388:
+m26415167:x:1389:
+m26415175:x:1390:
+m26415179:x:1391:
+m26415183:x:1392:
+m26415129:x:1394:
+m26415002:x:1393:
+m26415016:x:1395:
+m26415021:x:1396:
+m26415027:x:1397:
+m26415060:x:1398:
+m26415067:x:1399:
+m26415070:x:1400:
+m26415082:x:1401:
+m26415090:x:1402:
+m26415115:x:1403:
+m26415119:x:1404:
+m26415135:x:1405:
+m26415169:x:1406:
+m26415181:x:1407:
+m26415113:x:1408:
+iwanns:x:1409:
+m26415115@debian7:~$ ls $HOME -t
+readfile.py        tesphyton.py  hello.py   fruits2.txt  repo$
+compoundpython.py  hello.c       fruit.txt  repo         public_html
+m26415115@debian7:~$ date + "%m/%d/%y"
+date: extra operand `%m/%d/%y'
+Try `date --help' for more information.
+m26415115@debian7:~$ date +"%m/%d/%y"
+03/13/17
+//
+no 6
+m26415115@debian7:~$ cat /etc/services | less
+//
+no 7
+m26415115@debian7:~$ echo "Today is" $(date +"%A,$B,%d,%y")
+Today is Monday,,13,17
+//
+no 8
+m26415115@debian7:~$ echo $HOSTNAME
+debian7
+m26415115@debian7:~$ echo $USER
+m26415115
+m26415115@debian7:~$  echo $SHELL
+/bin/bash
+m26415115@debian7:~$ echo $HOME
+/home/m26415115
+//
+no 9
+berupa screenshot dari ubuntu terminal
+//
+no 10
+
+m26415115@debian7:~$ man mount
+MOUNT(8)                     System Administration                    MOUNT(8)
+
+NAME
+       mount - mount a filesystem
+
+SYNOPSIS
+       mount [-lhV]
+
+       mount -a [-fFnrsvw] [-t vfstype] [-O optlist]
+
+       mount [-fnrsvw] [-o option[,option]...]  device|dir
+
+       mount [-fnrsvw] [-t vfstype] [-o options] device dir
+
+DESCRIPTION
+       All files accessible in a Unix system are arranged in one big tree, the
+       file hierarchy, rooted at /.  These files can be spread out  over  sev-
+       eral  devices.  The mount command serves to attach the filesystem found
+       on some device to the big file tree. Conversely, the umount(8)  command
+       will detach it again.
+
+       The standard form of the mount command, is
+//

@@ -1,0 +1,153 @@
+chapter 4
+1
+
+m26415115@debian7:~$ cd $HOME
+m26415115@debian7:~$ mkdir projects
+m26415115@debian7:~$ cd projects
+m26415115@debian7:~/projects$ touch house1 house2 house3 house4 house5 house6 house7 house8 house9
+m26415115@debian7:~/projects$ ls
+house1  house2  house3  house4  house5  house6  house7  house8  house9
+m26415115@debian7:~/projects$ ls | grep house
+house1
+house2
+house3
+house4
+house5
+house6
+house7
+house8
+house9
+m26415115@debian7:~/projects$
+
+//
+2
+
+m26415115@debian7:~$ cd $HOME
+m26415115@debian7:~$ mkdir projects
+m26415115@debian7:~$ cd projects
+m26415115@debian7:~/projects$ touch house1 house2 house3 house4 house5 house6 house7 house8 house9
+m26415115@debian7:~/projects$ ls
+house1  house2  house3  house4  house5  house6  house7  house8  house9
+m26415115@debian7:~/projects$ ls | grep house
+house1
+house2
+house3
+house4
+house5
+house6
+house7
+house8
+house9
+m26415115@debian7:~/projects$ ^C
+m26415115@debian7:~/projects$ cd
+m26415115@debian7:~$ mkdir projects/houses/door
+mkdir: cannot create directory `projects/houses/door': No such file or directory
+m26415115@debian7:~$ mkdir projects/house
+m26415115@debian7:~$ mkdir projects/house/doors
+m26415115@debian7:~$ touch projects/house/bungalow.txt
+m26415115@debian7:~$ touch projects/house/doors/bifold.txt
+m26415115@debian7:~$ mkdir projects/outdoor
+m26415115@debian7:~$ mkdir projects/outdoor/vegetation
+m26415115@debian7:~$ touch projects/outdoor/vegetation/landscape.txt
+m26415115@debian7:~$ ls projects
+house   house2  house4  house6  house8  outdoor
+house1  house3  house5  house7  house9
+m26415115@debian7:~$ ls projects/house
+bungalow.txt  doors
+m26415115@debian7:~$ ls projects/house/doors
+bifold.txt
+m26415115@debian7:~$ ls projects/house
+bifold.txt  bungalow.txt  doors
+m26415115@debian7:~$ rm bifold.txt
+rm: cannot remove `bifold.txt': No such file or directory
+m26415115@debian7:~$ ls projects/outdoor/vegetation
+landscape.txt
+//
+3
+m26415115@debian7:~$ cp projects/{house1,house5} $HOME/projects/house
+m26415115@debian7:~$ ls projects/house
+bifold.txt  bungalow.txt  doors  house1  house5
+//
+4
+m26415115@debian7:~$ cp projects/{house1,house5} $HOME/projects/house
+m26415115@debian7:~$ ls projects/house
+bifold.txt  bungalow.txt  doors  house1  house5
+m26415115@debian7:~$ ^C
+m26415115@debian7:~$ cp -R /usr/share/doc/initscripts* $HOME/projects
+m26415115@debian7:~$ ls projects
+house   house2  house4  house6  house8  initscripts
+house1  house3  house5  house7  house9  outdoor
+m26415115@debian7:~$ ls projects/initscripts
+NEWS.Debian.gz  README.Debian  changelog.Debian.gz  changelog.gz  copyright
+//
+5
+m26415115@debian7:~$ ls -R $HOME/projects | less
+outdoor
+
+/home/m26415115/projects/house:
+bifold.txt
+bungalow.txt
+doors
+house1
+house5
+
+/home/m26415115/projects/house/doors:
+
+/home/m26415115/projects/initscripts:
+NEWS.Debian.gz
+README.Debian
+changelog.Debian.gz
+changelog.gz
+copyright
+
+/home/m26415115/projects/outdoor:
+vegetation
+
+/home/m26415115/projects/outdoor/vegetation:
+landscape.txt
+(END)
+
+//
+6
+m26415115@debian7:~$ rm -r projects/{house6,house7,house8}
+m26415115@debian7:~$ ls projects
+house  house1  house2  house3  house4  house5  house9  initscripts  outdoor
+//
+7
+m26415115@debian7:~$ mv projects/{house3,house4} $HOME/projects/house/doors
+m26415115@debian7:~$ ls projects/house/doors
+bifold.txt house3  house4
+//
+8
+m26415115@debian7:~$ rm -r projects/house/doors
+m26415115@debian7:~$ ls projects/houses
+ls: cannot access projects/houses: No such file or directory
+m26415115@debian7:~$ ls projects/house
+bungalow.txt  house1  house5
+//
+9
+m26415115@debian7:~$ chmod 640 projects/house2
+m26415115@debian7:~$ ls -l projects
+total 12
+drwxr-xr-x 2 m26415115 m26415115 4096 Mar 13 23:02 house
+-rw-r--r-- 1 m26415115 m26415115    0 Mar 13 22:48 house1
+-rw-r----- 1 m26415115 m26415115    0 Mar 13 22:48 house2
+-rw-r--r-- 1 m26415115 m26415115    0 Mar 13 22:48 house5
+-rw-r--r-- 1 m26415115 m26415115    0 Mar 13 22:48 house9
+drwxr-xr-x 2 m26415115 m26415115 4096 Mar 13 22:56 initscripts
+drwxr-xr-x 3 m26415115 m26415115 4096 Mar 13 22:51 outdoor
+//
+10
+m26415115@debian7:~$ ls projects
+house  house1  house2  house5  house9  initscripts  outdoor
+m26415115@debian7:~$ chmod -R 555 projects
+m26415115@debian7:~$ ls -l projects
+total 12
+dr-xr-xr-x 2 m26415115 m26415115 4096 Mar 13 23:02 house
+-r-xr-xr-x 1 m26415115 m26415115    0 Mar 13 22:48 house1
+-r-xr-xr-x 1 m26415115 m26415115    0 Mar 13 22:48 house2
+-r-xr-xr-x 1 m26415115 m26415115    0 Mar 13 22:48 house5
+-r-xr-xr-x 1 m26415115 m26415115    0 Mar 13 22:48 house9
+dr-xr-xr-x 2 m26415115 m26415115 4096 Mar 13 22:56 initscripts
+dr-xr-xr-x 3 m26415115 m26415115 4096 Mar 13 22:51 outdoor
+//
