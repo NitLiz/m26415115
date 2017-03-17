@@ -1,0 +1,157 @@
+1
+m26415115@debian7: cp -ra /etc/services /temp
+m26415115@debian7:~$ ls /tmp
+FILES
+a
+bash-fc-1488787680
+bitrock_installer.log
+bitrock_installer_8511.log
+chmod
+crontab
+crontab.1fcixe
+crontab.2cNKav
+crontab.3NEdkl
+crontab.BZjPZV
+crontab.EMMzSB
+crontab.IBqxCc
+crontab.Lw3Tgl
+crontab.ME2yqH
+crontab.NBDYrf
+crontab.OF6Ni9
+crontab.OzDiKL
+crontab.XgPzI9
+crontab.cBB8hG
+crontab.dvbwuI
+crontab.eyr5ch
+crontab.iX71cW
+crontab.oRUi84
+crontab.pXabuG
+crontab.qpHW7g
+crontab.sSz7om
+crontab.wW1ev2
+crontab.x8xtTK
+crontab.yUvg96
+files
+flaskr.db
+hsperfdata_m26413079
+hsperfdata_m26415043
+hsperfdata_openfire
+hsperfdata_root
+hsperfdata_tomcat6
+jadwalharga
+jetty-0.0.0.0-9090-webapp-_-any-2461774121208645053.dir
+mc-justin
+mc-m26414050
+mc-m26414052
+mc-m26414054
+mc-m26415009
+mc-m26415024
+mc-m26415029
+mc-m26415037
+mc-m26415039
+mc-m26415059
+mc-m26415069
+mc-m26415076
+mc-m26415079
+mc-m26415106
+mc-m26415126
+mc-m26415160
+mc-m26415163
+no1
+pip-_Y9MRe-uninstall
+pip-bQiHUc-record
+pip-oWlQzH-record
+services
+ssh-1xDsUCDz7p28
+ssh-4I0WCdwyjHFm
+ssh-67xz2tWk8cjP
+ssh-6mIF5h8BK9nK
+ssh-BGjWRdyZNQVa
+ssh-C0O9CchQq0r3
+ssh-FqKzV24aCqxJ
+ssh-GEP8Scb9LISB
+ssh-KTe5XIfguWzr
+ssh-LuDBMCb8wmrS
+ssh-MZ45KRM7CjQI
+ssh-Oujof1gmnET4
+ssh-OxQL9ra9XqZ3
+ssh-SaLZNu1ZzxcF
+ssh-WglFME3HS6n0
+ssh-WknoKCl8USEN
+ssh-ab81Kksn8lWT
+ssh-auxfZosMchio
+ssh-dJobrtqbuVKZ
+ssh-dlMGeB4ss9WC
+ssh-tCmiTijTdxxU
+ssh-yTV6vqlnhYQA
+ssh-ylaChZUosarm
+temp1086910544266521735.tmp
+test
+tmp58fSYe.zip
+tmpDLf9TA.zip
+tmpDQvp35.zip
+tmp_hGkh3.zip
+tmpcIEJZ1.zip
+tmpulJSqM.zip
+tmpvDmbAz.zip
+tmpvog1yz.zip
+tomcat6-tomcat6-tmp
+
+m26415115@debian7: vi /tmp/services/
+/WorldWideWeb
+
+//
+2
+//
+4
+
+m26415115@debian7:~$ find /etc -name passwd
+/etc/pam.d/passwd
+find: `/etc/polkit-1/localauthority': Permission denied
+/etc/cron.daily/passwd
+find: `/etc/ssl/private': Permission denied
+find: `/etc/openfire': Permission denied
+/etc/passwd
+find: `/etc/dovecot': Permission denied
+m26415115@debian7:~$ command > /dev/null 2>&1
+m26415115@debian7:~$ 2> /dev/null
+//
+5
+m26415115@debian7:~$ mkdir TEST
+m26415115@debian7:~$ cd TEST
+m26415115@debian7:~/TEST$ touch one two three
+m26415115@debian7:~/TEST$ ls -la
+m26415115@debian7:~/TEST$chmod u+rwx one
+m26415115@debian7:~/TEST$ chmod g+rwx one
+m26415115@debian7:~/TEST$ chmod o+rwx one
+m26415115@debian7:~/TEST$ ls -al
+m26415115@debian7:~/TEST$ chmod u+rwx two
+m26415115@debian7:~/TEST$ chmod g+rwx two
+m26415115@debian7:~/TEST$ chmod o+rwx two
+m26415115@debian7:~/TEST$ chmod u+rwx three
+m26415115@debian7:~/TEST$ chmod g+rwx three
+m26415115@debian7:~/TEST$ chmod o+rwx three
+//
+6
+find /usr/share/doc -ctime +300
+//
+7
+m26415115@debian7:~$ cp /usr/share/icons/gnome/icon-theme.cache /tmp/FILES
+
+m26415115@debian7:~$ cd /tmp
+
+m26415115@debian7:~$  cd FILES
+
+m26415115@debian7:~$ ls
+m26415115@debian7:~$ cd ..
+m26415115@debian7:~$ mkdir FILES
+m26415115@debian7:~$  cd ..
+m26415115@debian7:~$   cp /usr/share/icons/gnome/icon-theme.cache /tmp/FILES
+m26415115@debian7:~$   cp /usr/share/fonts/truetype/droid/DroidSansFallbackFull.ttf /tmp/FILES
+m26415115@debian7:~$   cp /usr/share/java/com.ibm.icu-4.4.jar /tmp/FILES
+m26415115@debian7:~$   cp /usr/share/doc/texlive-pstricks-doc/generic/pstricks/pstricks-doc.pdf /tmp/FILES
+m26415115@debian7:~$   cp /usr/share/doc/texlive-pstricks-doc/generic/pst-mirror/pst-mirror-doc.pdf /tmp/FILES
+m26415115@debian7:~$   find /usr/share -10M
+m26415115@debian7:~$  find /usr/share -size -10M
+m26415115@debian7:~$   cp /usr/share /tmp/FILES
+m26415115@debian7:~$   cp -r /usr/share /tmp/FILES
