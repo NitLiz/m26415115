@@ -1,0 +1,93 @@
+1
+m26415115@debian7:~$ ls
+TEST               fruits2.txt  hello.cpp    readfile.py  tesphyton.py
+compoundpython.py  hello        projects     repo
+fruit.txt          hello.c      public_html  repo$
+m26415115@debian7:~$ cd bin
+-bash: cd: bin: No such file or directory
+m26415115@debian7:~$ ls -la
+total 128
+drwxr-xr-x   9 m26415115 m26415115  4096 Mar 17 23:50 .
+drwxr-xr-x 416 root      root      16384 Mar  8 08:23 ..
+-rw-------   1 m26415115 m26415115  9510 Mar 18 21:05 .bash_history
+-rw-r--r--   1 m26415115 m26415115   220 Dec 30  2012 .bash_logout
+-rw-r--r--   1 m26415115 m26415115  3392 Dec 30  2012 .bashrc
+-rw-r--r--   1 m26415115 m26415115    99 Mar  1 09:56 .gitconfig
+-rw-------   1 m26415115 m26415115    35 Mar 13 22:58 .lesshst
+-rw-r--r--   1 m26415115 m26415115   739 Mar  8 09:02 .profile
+drwx------   2 m26415115 m26415115  4096 Mar  1 10:23 .ssh
+drwxr-xr-x   2 m26415115 m26415115  4096 Mar 17 23:10 .vim
+-rw-------   1 m26415115 m26415115  4147 Mar 17 23:30 .viminfo
+drwxr-xr-x   2 m26415115 m26415115  4096 Mar 17 23:51 TEST
+-rw-r--r--   1 m26415115 m26415115   158 Mar  8 10:22 compoundpython.py
+-rwxr--r--   1 m26415115 m26415115    12 Mar  8 08:37 fruit.txt
+-rw-r--r--   1 m26415115 m26415115    17 Mar  8 08:36 fruits2.txt
+-rwxr-xr-x   1 m26415115 m26415115  8488 Mar 15 09:57 hello
+-rw-r--r--   1 m26415115 m26415115    73 Mar  8 09:44 hello.c
+-rw-r--r--   1 m26415115 m26415115   106 Mar 15 09:47 hello.cpp
+dr-xr-xr-x   5 m26415115 m26415115  4096 Mar 13 23:01 projects
+drwxr-xr-x   3 m26415115 m26415115  4096 Mar 14 11:54 public_html
+-rwxr-xr-x   1 m26415115 m26415115   160 Mar  8 10:29 readfile.py
+drwxr-xr-x   3 m26415115 m26415115  4096 Mar  1 10:23 repo
+drwxr-xr-x   2 m26415115 m26415115  4096 Mar  1 09:37 repo$
+-rwxr-xr-x   1 m26415115 m26415115   196 Mar  8 10:14 tesphyton.py
+m26415115@debian7:~$ vi myownscript
+m26415115@debian7:~$ ./myownscript.sh
+-bash: ./myownscript.sh: No such file or directory
+m26415115@debian7:~$ ./myownscript
+-bash: ./myownscript: Permission denied
+m26415115@debian7:~$ chmod +x myownscript
+m26415115@debian7:~$ ./myownscript
+Today is
+Today is Sat Dec 10 15:45:04 EST 2011.
+echo You are in /home/joe and your host is abc.example.com.
+./myownscript: line 5: Of: command not found
+./myownscript: line 6: and: command not found
+./myownscript: line 7: unexpected EOF while looking for matching `"'
+./myownscript: line 9: syntax error: unexpected end of file
+
+//
+2
+
+//
+3
+
+//
+4
+Scriptnya :
+#!/bin/bash
+
+echo "What is your favorite operating system ?"
+echo "Your favorite operating system is : "
+read answer
+answer1="Windows"
+answer2="Mac"
+answer3="Linux"
+
+if  answer=$answer1 | answer=$answer2;
+then
+echo "L         O       L"
+elif answer=$answer3;
+then
+echo "Great Choice"
+else
+echo "Is" answer " an operating system?"
+fi
+!!NB: "L         O       L" is an output of an insulting sentence
+
+Tampilan setelah dieksekusi:
+m26415115@debian7:~$ ./myos
+What is your favorite operating system ?
+Your favorite operating system is :
+Windows
+L               O       L
+m26415115@debian7:~$ ./myos
+What is your favorite operating system ?
+Your favorite operating system is :
+Mac
+L               O       L
+
+//
+5
+
+//
