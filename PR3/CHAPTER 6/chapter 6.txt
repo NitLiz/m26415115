@@ -1,0 +1,112 @@
+CHAPTER 6
+1
+m26415115@debian7:$ ps ux | less
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+1403     29471  0.0  0.0  28992  1224 ?        S    17:49   0:00 sshd: m26415115@pts/1
+1403     29472  0.0  0.1  19932  4112 pts/1    Ss   17:49   0:00 -bash
+1403     30181  0.0  0.0  15316  1148 pts/1    R+   17:55   0:00 ps ux
+1403     30182  0.0  0.0   6444   844 pts/1    S+   17:55   0:00 less
+
+//
+2
+m26415115@debian7:$ ps -eo 'pid,user,group,gid,vsz,rss,comm' --sort=-rss | less
+tampilan:
+s  PID USER     GROUP      GID    VSZ   RSS COMMAND
+ 8757 root     root         0 2785544 600252 java
+ 3244 openfire openfire   119 2203016 92916 java
+18095 mysql    mysql      111 537944 62164 mysqld
+20134 tomcat6  tomcat6    114 688220 43592 java
+ 8796 root     root         0 2161472 40600 java
+ 6804 www-data www-data    33 268344 39516 apache2
+ 6980 www-data www-data    33 268236 39372 apache2
+15038 www-data www-data    33 268476 39136 apache2
+15670 www-data www-data    33 264916 36016 apache2
+ 8007 www-data www-data    33 264972 35644 apache2
+10495 www-data www-data    33 264672 35604 apache2
+16853 www-data www-data    33 264564 35376 apache2
+19652 www-data www-data    33 262904 34500 apache2
+18386 www-data www-data    33 262248 33580 apache2
+19653 www-data www-data    33 261044 32260 apache2
+ 8265 1211     1211      1211 341920 10040 python
+26212 root     root         0 237352  6788 apache2
+29472 1403     1403      1403  19932  4112 bash
+  841 1291     1291      1291 220160  3960 python
+31803 1192     1192      1192 220024  3936 python
+30245 1277     1277      1277 143484  3896 python
+29880 1271     1271      1271 219692  3744 python
+
+//
+3
+m26415115@debian7:$ ps -eo 'pid,user,group,vsz,rss,comm' | less
+tampilan: 
+  PID USER     GROUP       VSZ   RSS COMMAND
+    1 root     root      10656   252 init
+    2 root     root          0     0 kthreadd
+    3 root     root          0     0 ksoftirqd/0
+    5 root     root          0     0 kworker/u:0
+    6 root     root          0     0 migration/0
+    7 root     root          0     0 watchdog/0
+    8 root     root          0     0 migration/1
+   10 root     root          0     0 ksoftirqd/1
+   12 root     root          0     0 watchdog/1
+   13 root     root          0     0 cpuset
+   14 root     root          0     0 khelper
+   15 root     root          0     0 kdevtmpfs
+   16 root     root          0     0 netns
+   17 root     root          0     0 sync_supers
+   18 root     root          0     0 bdi-default
+   19 root     root          0     0 kintegrityd
+   20 root     root          0     0 kblockd
+   22 root     root          0     0 khungtaskd
+   23 root     root          0     0 kswapd0
+   24 root     root          0     0 vmstat
+   25 root     root          0     0 ksmd
+   26 root     root          0     0 khugepaged
+
+//
+4
+m26415115@debian7:$ top -hv | -bcHisS -d delay -n limit -u|U user M|P | -p pid -w [cols]
+
+m26415115@debian7:~$ top
+top - 18:02:03 up 198 days, 10:07,  1 user,  load average: 0.24, 0.36, 0.41
+Tasks: 182 total,   1 running, 181 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 14.2 us,  4.7 sy,  0.0 ni, 71.4 id,  9.5 wa,  0.0 hi,  0.2 si,  0.0 st
+KiB Mem:   2061128 total,  1901336 used,   159792 free,   219880 buffers
+KiB Swap:  4191228 total,  1210132 used,  2981096 free,   192220 cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S  %CPU %MEM    TIME+  COMMAND
+ 8757 root      20   0 2720m 586m  652 S   0.7 29.1   2684:04 java
+ 3244 openfire  20   0 2151m  90m 2076 S   0.0  4.5 380:21.74 java
+18095 mysql     20   0  525m  60m 4048 S   0.0  3.0  32:39.31 mysqld
+20134 tomcat6   20   0  672m  42m 1908 S   0.3  2.1  52:26.58 java
+ 8796 root      20   0 2110m  39m 1352 S   0.0  2.0 163:35.86 java
+ 6804 www-data  20   0  262m  38m 5848 S  25.9  1.9   1:32.82 apache2
+ 6980 www-data  20   0  261m  38m 5816 S   0.0  1.9   1:39.93 apache2
+15038 www-data  20   0  262m  38m 5440 S   0.0  1.9   1:36.53 apache2
+15670 www-data  20   0  258m  35m 5680 S   0.0  1.7   1:38.72 apache2
+ 8007 www-data  20   0  258m  34m 5540 S   0.0  1.7   1:33.04 apache2
+10495 www-data  20   0  258m  34m 5704 S   0.0  1.7   1:40.30 apache2
+16853 www-data  20   0  258m  34m 5536 S   0.0  1.7   1:15.09 apache2
+19652 www-data  20   0  256m  33m 4836 S   0.0  1.7   1:14.70 apache2
+18386 www-data  20   0  256m  32m 4272 S   0.0  1.6   1:21.75 apache2
+19653 www-data  20   0  254m  31m 4156 S   0.0  1.6   1:33.38 apache2
+ 8265 m2641409  20   0  333m 9.8m  932 S   0.7  0.5 887:35.80 python
+26212 root      20   0  231m 6788 2804 S   0.0  0.3   2:24.36 apache2
+--NB: P for CPU			M for memory consumption
+//
+5
+screenshot--> SS chapter 6 no 5
+//
+6
+nita@nita-VirtualBox:~$ gedit
+nita@nita-VirtualBox:~$ kill -SIGKILL 2156
+//
+7
+screenshot--
+8
+screenshot--
+9
+screenshot--
+10
+screenshot--
+
