@@ -1,0 +1,22 @@
+nomor 2
+m26415115@debian7:~$ vi myparameters
+#!bin/bash
+
+ONE=$1
+TWO=$2
+THREE=$3
+
+X=3
+Y=$(($ONE+$TWO+$THREE))
+
+echo "There are $X parameters that include $Y. The first is $ONE, the second is $TWO, the third is $THREE."
+//
+nomor 5
+m26415115@debian7:~$ vi stringrepeat
+#!bin/bash
+
+for count in moose cow goose sow
+do
+    echo "I have a $count"
+done
+//

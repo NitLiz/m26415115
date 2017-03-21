@@ -1,0 +1,13 @@
+nomor 3
+3
+m26415115@debian7:~$ vi mytownscript
+#!/bin/bash
+
+echo "What town did you grow up?"
+read mytown
+
+echo "Where do you live in that town?"
+read mystreet
+
+echo "The street I grew up on was $mystreet and the town was $mytown."
+//
