@@ -1,0 +1,6 @@
+#!/bin/bash
+
+read a
+tampil=$(curl $a| grep -n "<[^\!]*>")
+echo $tampil
+
