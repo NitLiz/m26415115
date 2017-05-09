@@ -1,0 +1,34 @@
+import cherrypy
+import random
+import string
+
+@cherrypy.expose
+class StringGeneratorWebService(object):
+
+    @cherrypy.tools.accept(media='text/plain')
+    def GET(self):
+        return cherrypy.session['my_strings']
+
+    def POST(self, length=12):
+        some_string = ''.join(random.sample(string.hexdigits, int(length)))
+        cherrypy.session['my_strings'] = some_string
+        return some_string
+
+    def put(self, another_string):
+        cherrypy.session['my_strings'] = another_string
+
+    def del(self):
+        cherrypy.session.pop('my_strings', None)
+
+
+if __name__ == '__main__':
+    conf = {
+        '/': {
+            'request.dispatch': cherrypy.dispatch.MethodDispatcher(),
+            'tools.sessions.on': True,
+            'tools.response_headers.on': True,
+            'tools.response_headers.headers': [('Content-Type', 'text/plain')],
+        }
+    }
+	
+    cherrypy.quickstart(StringGeneratorWebService(), '/', conf)
