@@ -1,51 +1,45 @@
-import cherrypy
+import os, os.path
 import random
 import string
+
+import cherrypy
+
 
 class StringGenerator(object):
     @cherrypy.expose
     def index(self):
-        return open('index.html')
+        return """<html>
+          <head>
+            <link href="/static/css/style.css" rel="stylesheet">
+          </head>
+          <body>
+            <form method="get" action="generate">
+              <input type="text" value="8" name="length" />
+              <button type="submit">Give it now!</button>
+            </form>
+          </body>
+        </html>"""
 
-@cherrypy.expose
-class StringGeneratorWebService(object):
-
-    @cherrypy.tools.accept(media='text/plain')
-    def GET(self):
-        return cherrypy.session['my_strings']
-
-    def POST(self, length=12):
+    @cherrypy.expose
+    def generate(self, length=8):
         some_string = ''.join(random.sample(string.hexdigits, int(length)))
-        cherrypy.session['my_strings'] = some_string
+        cherrypy.session['mystring'] = some_string
         return some_string
 
-    def put(self, another_string):
-        cherrypy.session['my_strings'] = another_string
-
-    def del(self):
-        cherrypy.session.pop('my_strings', None)
+    @cherrypy.expose
+    def display(self):
+        return cherrypy.session['mystring']
 
 
 if __name__ == '__main__':
-       conf = {
+    conf = {
         '/': {
             'tools.sessions.on': True,
             'tools.staticdir.root': os.path.abspath(os.getcwd())
         },
-        '/generator': 
-		{
-            'request.dispatch': cherrypy.dispatch.MethodDispatcher(),
-            'tools.response_headers.on': True,
-            'tools.response_headers.headers': [('Content-Type', 'text/plain')],
-        },
-        '/static': 
-		{
+        '/static': {
             'tools.staticdir.on': True,
             'tools.staticdir.dir': './public'
         }
     }
-	
-	
-    webapp = StringGenerator()
-    webapp.generator = StringGeneratorWebService()
-    cherrypy.quickstart(webapp, '/', conf)
+    cherrypy.quickstart(StringGenerator(), '/', conf)
