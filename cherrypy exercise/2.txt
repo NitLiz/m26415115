@@ -2,7 +2,7 @@ import cherrypy
 import random
 import string
 
-class StringGenerator(obj):
+class StringGenerator(object):
     @cherrypy.expose
     def index(self):
         return "Hello world!"
