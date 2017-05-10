@@ -1,6 +1,6 @@
 import cherrypy
 
-class HelloWorld(obj):
+class HelloWorld(object):
     @cherrypy.expose
 	
     def index(self):
