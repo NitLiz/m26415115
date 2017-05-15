@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background-color:#F3C;
+}
+
+h1{
+	font-family:"Comic Sans MS", cursive;
+	color:#FFF;
+}
+
+.formgroup {
+	background-color:#F3C;
+	color:#FFF;
+	font-family:Verdana, Geneva, sans-serif;
+}

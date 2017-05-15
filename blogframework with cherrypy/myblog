@@ -1,0 +1,53 @@
+import os, os.path
+import cherrypy
+import string
+
+@cherrypy.expose
+def registers(self):
+    return """<html>
+        <head>
+            <link rel="stylesheet" href="/statics/css/reg.css">
+        </head>
+        <body>
+            <h1>Pendaftaran Workshop</h1>
+            <form action="{{url_for('register')}}" method="post">
+            <div class="formgroup">
+                <br><br><label for="names">Full Name</label>
+                <br><input type="type" id="names" name="names">
+                <br><br><br><label for="nrp">NRP</label>
+                <br><input type="type" id="nrp" name="nrp">
+                <br><br><label for="jurusan">Jurusan</label>
+                <br><input type="type" id="jurusan" name="jurusan">
+                <br><br><label for="email">Email</label>
+                <br><input type="type" id="email" name="email">
+                <br>
+                <br><br><button type="submit">Submit</button>
+            </div>
+            </form>
+        </body>
+        </head>
+    </html>"""
+
+##@cherrypy.expose
+##def generate(self, length=8):
+##        some_string = ''.join(random.sample(string.hexdigits, int(length)))
+##        cherrypy.session['mystring'] = some_string
+##        return some_string
+##
+##@cherrypy.expose
+##def display(self):
+##        return cherrypy.session['mystring']
+
+
+if __name__ == '__main__':
+    conf = {
+        '/': {
+            'tools.sessions.on': True,
+            'tools.staticdir.root': os.path.abspath(os.getcwd())
+        },
+        '/static': {
+            'tools.staticdir.on': True,
+            'tools.staticdir.dir': './public'
+        }
+    }
+    cherrypy.quickstart(StringGenerator(), '/', conf)
