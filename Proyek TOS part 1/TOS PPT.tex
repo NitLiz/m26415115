@@ -1,0 +1,254 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass[pdf]{beamer}
+
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usepackage[pdftex]{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{python}
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[Short title]{Ren'Py} % The short title appears at the bottom of every slide, the full title is only on the title page
+\subtitle{Create Your Own VN}
+\author{Nita, Yoel, Ichwanto} % Your name
+\institute[Petra Christian University] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+Petra Christian University \\ % Your institution for the title page
+\medskip
+\textit{m...@john.petra.ac.id} % Your email address
+}
+\date{\today} % Date, can be changed to a custom date
+
+\begin{document}
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+\begin{frame}
+\frametitle{Ren'Py-Create Your Own World} % Table of contents slide, comment this block out to remove it
+\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+%------------------------------------------------
+\section{First Section} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
+%------------------------------------------------
+
+\subsection{Subsection Example} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
+
+\begin{frame}
+\frametitle{What is Ren'Py?}
+OpenSource dan free software untuk membuat visual novel atau life simulation games
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Why Ren'Py?}
+1. OpenSource dan free software
+2. Bisa dijalankan di devices apapun, umumnya PC dan mobile device
+3. Script Language yang mudah dipahami
+4. Fitur-fitur lengkap telah disediakan
+5. Mudah di customize
+6. Efek-efek yang powerful
+7. Compatible formats dan support nya bagus
+\end{frame}
+%------------------------------------------------
+\overlays{12}{
+\begin{frame}{Text overlay - no replacement}
+\begin{center}
+\frametitle{Script Structure}
+\begin{itemize}
+\item Init Blocks:
+\item labels:
+\item Comments:
+\item Characters:
+	\begin{figure}
+	\includegraphics[width=0.8\linewidth]{char.jpg}
+	\end{figure}
+\item Images:
+\item Transitions:
+\item Positions:
+\item Musics&Sound Effects:
+\item Ending:
+\item Menus, Jumps:
+\item Supporting Flags-Python If Statement
+\end{itemize}
+\end{frame} }
+
+%------------------------------------------------
+\overlays{6}{
+\begin{frame}{Text overlay - no replacement}
+\begin{center}
+\begin{frame}
+\frametitle{Python & Ren'Py}
+\begin{itemize}
+\item Statement Equal:
+\item Saving, loading, Rollback:
+\item Transitions:
+\item Modes:
+\item File Access:
+\item other functions:
+\end{itemize}
+\end{frame}}
+
+%----------------------------------------------------
+\overlays{12}{
+\begin{frame}{Text overlay - no replacement}
+\begin{center}
+\begin{frame}
+\frametitle{What we use from Ren'Py}
+\begin{itemize}
+\item Characters:
+\end{itemize}
+\end {frame}}
+
+%---------------------------------------------------
+\begin{frame}
+\frametitle{Masalah}}
+\begin{itemize}
+\item Display:
+\item Windows Encoding:
+\end{itemize}
+\end{frame}
+
+%-----------------------------------------------------------
+\begin{frame}
+\frametitle{Blocks of Highlighted Text}
+\begin{block}{Block 1}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
+\end{block}
+
+\begin{block}{Block 2}
+Pellentesque sed tellus purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum quis magna at risus dictum tempor eu vitae velit.
+\end{block}
+
+\begin{block}{Block 3}
+Suspendisse tincidunt sagittis gravida. Curabitur condimentum, enim sed venenatis rutrum, ipsum neque consectetur orci, sed blandit justo nisi ac lacus.
+\end{block}
+\end{frame}
+
+
+
+%------------------------------------------------
+\section{Second Section}
+%------------------------------------------------
+
+
+\begin{frame}
+\frametitle{Figure}
+%Uncomment the code on this slide to include your own image from the same directory as the template .TeX file.
+\begin{figure}
+\includegraphics[width=0.8\linewidth]{char.jpg}
+\end{figure}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
+\frametitle{Citation}
+An example of the \verb|\cite| command to cite within the presentation:\\~
+
+This statement requires citation \cite{p1}.
+\end{frame}
+
+%------------------------------------------------
+
+% \begin{frame}
+% \frametitle{References}
+% \footnotesize{
+% \begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below
+% \bibitem[Smith, 2012]{p1} John Smith (2012)
+% \newblock RenPy
+% \newblock \emph{Journal Name} 12(3), 45 -- 678.
+% \end{thebibliography}
+% }
+% \end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\Huge{\centerline{The End}}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\end{document} 
